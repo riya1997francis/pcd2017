@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+ void  main()
+{float a,b,c;
+float d , x1,x2,r;
+printf("enter the 3 co efficients\n");
+scanf("%f%f%f" , &a, &b ,&c);
+if((a*b*c) ==0)
+{
+
+
+    printf("invalid input");
+}
+else
+    {
+        d=b*b-4*a*c;
+ r =sqrt(d);
+if(d>0)
+{
+    x1 = (-b+r)/(2.0*a);
+    x2= ( -b-r)/(2.0*a);
+    printf("the roots are real and distinct%d %d", x1 ,x2);
+}
+else if(d==0)
+{
+
+    x1=x2= -b/(2.0*a);
+    printf("the roots are real and equal %d " , x1);
+
+}
+else{
+    x1 = -b/(2.0 *a);
+x2 = r /(2.0*a);
+printf("the roots are real and imaginary%d %d" , x1 , x2);
+
+
+
+}}
+  }
+
+
+
